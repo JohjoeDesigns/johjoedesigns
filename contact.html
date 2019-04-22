@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joh joe designs - Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="wrapper">
+     <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" style="background: url('imgs/potrait.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+    <div class="content">
+        <div class="content-content">
+         <h1>Reach out</h1>
+         <p>Feel free to contact me on any of these platforms during business hours.</p>
+         <a href="#contacts" class="btn">Platforms</a>
+         </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contact">
+            <div class="icon">
+                <i class="fa fa-phone"></i>
+            </div>
+            <div class="icon-content">
+                <h3>Call during business hours on:</h3>
+                <p>0717835731</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="icon">
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="icon-content">
+                <h3>Send mail to this address:</h3>
+                <a href= "mailto:johjoedesigns@gmail.com">johjoedesigns@gmail.com</a> 
+            </div>
+        </div>
+        <div class="contact">
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+            </div>
+            <div class="icon-content">
+                <h3>Like my facebook page to see the what i've been up to</h3>
+                <a href="https://www.facebook.com/Johjoe-Designs-2295105897433380/?ref=br_rs" target="_blank" style="color: #fff">Go to facebook</a>
+            </div>
+        </div>
+         <div class="contact">
+            <div class="icon">
+                <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="icon-content">
+                <h3>Or visit me on site</h3>
+                <p>@Nanyuki next to Trendz</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+        <p>Johjoe Designs &copy; 2019</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+    $('.btn').on('click',() => {
+            const contacts = $('#contacts').position().top;
+            $('html,body').animate({
+                scrollTop: contacts
+            },900)
+            // alert(123);
+    });
+</script>
+
+</body>
+</html>
